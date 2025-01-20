@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-red: #E50914;
+  --primary-black: #141414;
+}
+
+body {
+  background-color: var(--primary-black);
+  color: white;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.btn-primary {
+  @apply bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors;
+}
+
+.card {
+  @apply bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform;
+}
